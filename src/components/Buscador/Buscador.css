@@ -1,0 +1,61 @@
+.cnt {
+    padding-top: 10px;
+}
+
+.form-container {
+    display       : flex;
+    flex-direction: row;
+    align-items   : flex-start;
+}
+
+.form-container button {
+    margin-left: 20px;
+}
+
+.label {
+    padding-right: 10px;
+}
+
+.peli {
+    display         : flex;
+    width           : 500px;
+    justify-content : space-between;
+    margin-top      : 5e;
+    background-color: #303236;
+    gap             : 10px;
+    margin-bottom   : 10px;
+    padding         : 8px 10px;
+    border          : 1px solid #cccccc;
+    border-radius   : 8px;
+    transition      : all 0.5s ease;
+}
+
+.peli:hover {
+    background-color: #cccccc;
+    
+}
+.peli:hover  a{
+    
+    color: #303236;
+}
+
+.peli a {
+    text-decoration: none;
+    color          : #FFFFFF;
+}
+
+.container-main {
+    padding: 25px;
+    background-color: #e9e5e5;
+    height: 100vh;
+}
+
+.container-list{
+    margin-top: 2rem;;
+}
+
+.titulo{
+    background-color: #303236;
+    color: #ffffff;
+    text-align: center;
+}
