@@ -28,10 +28,14 @@ const rootReducer = (state = initialState, action) => {
             }
         }
         case ADD_MOVIE_FAVORITE: 
+        const newMovie = state.movies.find(movie => movie.id === action.payload.id);        
+        if(!newMovie){
             return {
                 ...state,
                 movies: [...state.movies, action.payload]
             }
+        }
+        return state;          
 
        
         case REMOVE_MOVIE_FAVORITE: {
