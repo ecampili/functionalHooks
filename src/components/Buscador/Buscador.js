@@ -18,6 +18,7 @@ const Buscador = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(getMovies(title));
+    setTitle('');
   }
 
 
