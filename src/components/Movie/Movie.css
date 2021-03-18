@@ -5,8 +5,8 @@
 }
 
 .container {
-  margin       : 20px  auto;
-  width        : 700px;  
+  margin       : 20px auto;
+  width        : 700px;
   background   : #4d4d4d;
   border-radius: 5px;
   position     : relative;
@@ -17,18 +17,18 @@
 
 
 .details {
-  
-  padding: 0px 20px;
-  display: flex;
-  flex-direction: column;  
+
+  padding       : 0px 20px;
+  display       : flex;
+  flex-direction: column;
 }
 
-.details div{
+.details div {
   margin-bottom: 1rem;
 }
 
-.details span{
-  font-weight: bold;
+.details span {
+  font-weight  : bold;
   padding-right: 10px;
 }
 
@@ -76,12 +76,17 @@
   flex-direction: row;
 }
 
-.data{
-  display:flex; 
+.data {
+  display: flex;
 }
 
-.poster img{
-  border-radius:5px;
-  
+.poster img {
+  border-radius: 5px;
 
+}
+
+.movie-detail h2 {
+  text-align    : center;
+  border-bottom : 1px solid white;
+  padding-bottom: 20px;
 }
