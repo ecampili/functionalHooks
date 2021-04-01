@@ -6,7 +6,7 @@ import './Favorites.css';
 
 const ConnectedList = () => {
 
-  const movies = useSelector(state => state.movies);
+  const movies = useSelector(state => state.favorites);
   const dispatch = useDispatch();
 
   return (

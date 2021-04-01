@@ -7,7 +7,7 @@
 import { GET_MOVIES, GET_MOVIE_DETAILS, ADD_MOVIE_FAVORITE, REMOVE_MOVIE_FAVORITE } from '../actions/actionTypes';
 
 const initialState = {
-    movies: [],
+    favorites: [],
     moviesLoaded: [],
     movieDetail: {}
 }
@@ -28,11 +28,11 @@ const rootReducer = (state = initialState, action) => {
             }
         }
         case ADD_MOVIE_FAVORITE: 
-        const newMovie = state.movies.find(movie => movie.id === action.payload.id);        
+        const newMovie = state.favorites.find(movie => movie.id === action.payload.id);        
         if(!newMovie){
             return {
                 ...state,
-                movies: [...state.movies, action.payload]
+                favorites: [...state.favorites, action.payload]
             }
         }
         return state;          
@@ -41,7 +41,7 @@ const rootReducer = (state = initialState, action) => {
         case REMOVE_MOVIE_FAVORITE: {
             return {
                 ...state,
-                movies: state.movies.filter(movie => movie.id !== action.payload.id)
+                favorites: state.favorites.filter(movie => movie.id !== action.payload.id)
             }
 
         }
